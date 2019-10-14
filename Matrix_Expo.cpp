@@ -65,3 +65,25 @@ matrix matrix_expo(int p,matrix R,int d)
   }
   return ret;
 }
+
+int32_t main()
+{
+
+    matrix X(
+             {
+               {0,1,1,1},
+               {1,0,1,1},
+               {1,1,0,1},
+               {1,1,1,0}
+
+             }
+             );
+
+
+             int n;
+             cin>>n;
+             cout<<matrix_expo(n,X).mat[0][0]<<endl;
+
+    return 0;
+}
+
